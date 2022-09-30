@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+            }
+            .sidebar {
+                height: 100%;
+                width: 50px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color:#f0f0f0;
+                overflow-x: hidden;
+                padding-top: 16px;
+            }
+            .sidebar a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+                display: block;
+            }
+            .sidebar a i{
+                line-height: 4.5;
+            }
+            .right-content{
+                padding-left: 50px;
+            }
+            .info-board{
+                display: grid;
+                grid-template-columns: 30% 70%;
+                background-color: #454545;
+            }
+            .info-board-left{
+                padding: 50px;
+            }
+            .info-board-right{
+                padding-top: 30px;
+                color: white;
+                position: relative;
+            }
+            .info-board-right p{
+                line-height: 0%;
+                
+            }
+            .info-board-right .board-actions{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding-bottom: 6%;
+            }
+            .board-actions a{
+                text-decoration: none;
+                color: white;
+                padding: 2%;
+            }
+            .board-actions a i{
+                padding-right: 1%;
+            }
+            .main-content-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding: 10px;
+            }
+            .grid-item{
+                height: 50px;
+                padding-top: 25px;
+                padding-left: 10px
+            }
+            .even {
+                background-color: rgba(255, 255, 255, 0.8);
+               
+            }
+            .odd {
+                background-color: rgb(240 240 240);
+                
+            }
+            
+            .grid-item a{
+                border: 1px solid;
+                padding: 2px;
+                text-decoration: none;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 10%;
+                background-color: #43689b;
+                color: white;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <a href="#"><i class="las la-bars"></i></a>
+                <a href="#"><i class="las la-home"></i></a>
+                <a href="#"><i class="las la-search"></i></a>
+                <a href="#"><i class="las la-volume-up"></i></a>
+                <a href="#"><i class="las la-user"></i></a>
+                <a href="#"><i class="las la-cog"></i></a>
+                <a href="#"><i class="lab la-spotify"></i></a>
+                <a href="#"><i class="lab la-soundcloud"></i></a>
+            </div>
+            <div class="right-content">
+                <div class="info-board">
+                    <div class="info-board-left">
+                        <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Cattynoard album" />
+                    </div>
+                    <div class="info-board-right">
+                        <div class="board-titles">
+                            <h2>CattyBoard Top 100 Single Charts (11.06.36)</h2>
+                            <p>Unknown Aritist</p>
+                            <p>2016.Charts. 100 songs</p>
+                        </div>
+                        <div class="board-actions">
+                            <a href="#"><i class="las la-play"></i>Play all</a>
+                            <a href="#"><i class="las la-plus"></i>Add to</a>
+                            <a href="#"><i class="las la-ellipsis-h"></i>More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-container">
+                    <div class="grid-item even">1.One Dance</div>
+                    <div class="grid-item even">Crake feat CatKid & Cyla</div>
+                    <div class="grid-item even">2:54</div>  
+                    <div class="grid-item even"><a href="">CATTY CLOUD SYNC</a></div>
+
+                    <div class="grid-item odd">2.Panda</div>
+                    <div class="grid-item odd">Cattee</div>
+                    <div class="grid-item odd">4:06</div>  
+                    <div class="grid-item odd"><a href="">CATTY CLOUD SYNC</a></div>
+
+                    <div class="grid-item even">3.Can't Stop the Feeling!</div>
+                    <div class="grid-item even">Catin Cimberlake</div>
+                    <div class="grid-item even">3:56</div>  
+                    <div class="grid-item even"><a href="">CATTY CLOUD SYNC</a></div>
+
+                    <div class="grid-item odd">4.Work Fromn Home</div>
+                    <div class="grid-item odd">Cat Harmony feat Colla</div>
+                    <div class="grid-item odd">3:34</div>  
+                    <div class="grid-item odd"><a href="">CATTY CLOUD SYNC</a></div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Footer</p>
+              </div>
+        </div>
+    </body>
+</html>
