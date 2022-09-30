@@ -100,7 +100,34 @@
                 background-color: #43689b;
                 color: white;
                 z-index: 2;
+                display: grid;
+                grid-template-columns: 10% 30% 60%;
             }
+            .grid-item-footer{
+                padding: 10px;
+            }
+            .grid-item-footer img{
+                width: 80px;
+                height: 80px;
+            }
+            .board-actions-footer{
+                padding-top: 3%;
+                float: right;
+                width: 100%;
+            }
+            .grid-item-footer-middle{
+                font-size: 12px;
+                padding-top: 6%;
+                line-height: 0.5;
+                margin-left: -36px;
+            }
+            .board-actions-footer a{
+                text-decoration: none;
+                padding-left: 15%;
+                color: white;
+                font-size: x-large;
+            }
+
         </style>
     </head>
     <body>
@@ -156,8 +183,23 @@
                 </div>
             </div>
             <div class="footer">
-                <p>Footer</p>
-              </div>
+                <div class="grid-item-footer">
+                    <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Cattynoard album" />
+                </div>
+                <div class="grid-item-footer-middle">
+                    <p>If It Ain't Love</p>
+                    <p>Catson Derulo</p>
+                </div>
+                <div class="grid-item-footer">
+                    <div class="board-actions-footer">
+                        <a href="#"><i class="las la-step-backward"></i></a>
+                        <a href="#"><i class="las la-pause"></i></a>
+                        <a href="#"><i class="las la-step-forward"></i></a>
+                        <a href="#"><i class="las la-undo-alt"></i></a>
+                        <a href="#"><i class="las la-random"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
