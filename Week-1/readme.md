@@ -164,6 +164,6 @@ The Open Systems Interconnection (OSI) model describes seven layers that compute
 
 Network layer of browser is a part of OSI Model; the network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node.
 
-#References:
+# References:
 https://web.dev/howbrowserswork/
 https://www.imperva.com/learn/application-security/osi-model/
