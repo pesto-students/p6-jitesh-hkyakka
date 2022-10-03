@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  } 
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 340px;
+    background: rgb(34,45,195);
+    background: linear-gradient(0deg, rgba(34,45,195,1) 0%, rgba(45,253,226,1) 100%);
+}
+.nav {
+    text-align: center;
+    padding-top: 15px;
+}
+.nav a {
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.header h1{
+    width: 35%;
+    margin: 4% 0 0 42%;
+    font-size: 70px;
+    line-height: 90px;
+}
+.header h4,h5{
+    margin: 0 0 0 35%;
+}
