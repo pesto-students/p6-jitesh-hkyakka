@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Times New Roman", Times, serif;
 }
 .header{
     height: 340px;
@@ -86,6 +87,28 @@ form label{
     height: 1em;
     margin-top: 0.29em;
 }  
+form input[type="submit"]{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+   }
+form input[type="submit"]:hover{
+    background-color: #025ec1;
+}   
+input:required:valid {
+    border-color: green;
+  }
+  input:invalid {
+    border-color: red;
+  }
 .footer {
     position: relative;
     bottom: 0;

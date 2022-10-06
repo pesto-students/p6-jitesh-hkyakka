@@ -19,23 +19,24 @@
         <div class="container">
            <div class="main-content">
                 <div class="grid-container">
-                    <div class="grid-item item1">
+                    <article class="grid-item item1">
                         <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                    </div>
+                    </article>
                     <div class="grid-item item2">
                         <img src="./images/lorem.jpg" alt="What is Loerem Ipsum?" />
                     </div>
-                    <div class="grid-item item3">
+                    <article class="grid-item item3">
                         <p>Aenean pharetra orci id nisl commodo fringilla. Vestibulum nec ante a risus cursus feugiat at quis mi. Phasellus vel arcu tincidunt, egestas sem eget, lacinia mauris. Suspendisse vitae enim ac justo pulvinar vehicula. Sed luctus est nec scelerisque placerat. Nam fermentum at dolor a ullamcorper. Suspendisse potenti. Phasellus finibus ullamcorper urna, nec vehicula libero suscipit in.</p>
-                    </div>
-                    <div class="grid-item item4">
+                    </article>
+                    <article class="grid-item item4">
                         <strong>Where does it come from?</strong>
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
-                    </div>
-                    <div class="grid-item item5">
+                        <a href="#">Click Me!</a>
+                    </article>
+                    <article class="grid-item item5">
                         <strong>Where can I get some?</strong>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                    </div>
+                        <p>There are many variations of passages of <a href="#">Lorem Ipsum</a> available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    </article>
                 </div>
                 <div class="contactus">
                     <h2>Contact Us</h2>
@@ -55,23 +56,24 @@
                         </div>
                         <div class="form-group">
                             <label for="ln">Last name</label>
-                            <input type="text" id="ln" class="input-text" name="firstname" placeholder="First name">
+                            <input type="text" id="ln" class="input-text" name="lastname" placeholder="Last name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" id="email" class="input-text" name="firstname" placeholder="First name">
+                            <input type="text" id="email" class="input-text" name="email" placeholder="your@mail.com" required>
                         </div>
                         <div class="form-group">
                             <label for="mobile">Phone number</label>
-                            <input type="text" id="mobile" class="input-text" name="firstname" placeholder="First name">
+                            <input type="text" id="mobile" class="input-text" name="mobile" placeholder="" type="tel" 
+                            pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" id="password" class="input-text" name="firstname" placeholder="First name">
+                            <input type="password" id="password" class="input-text" name="password" placeholder="*****" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
                         </div>
                         <div class="form-group">
                             <label for="cpassword">Confirm your password</label>
-                            <input type="text" id="cpassword" class="input-text" name="firstname" placeholder="First name">
+                            <input type="text" id="cpassword" class="input-text" name="cpassword" placeholder="*****" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
                         </div>
                         <div class="form-group">
                             <label for="country">Country</label>
