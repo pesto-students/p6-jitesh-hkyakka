@@ -53,10 +53,14 @@ body{
 }
 
 .item2 img{
-    width: 50%;
+    width: 100%;
 }
 .contactus{
     padding: 5% 20%;
+    
+}
+.contactus > h2{
+    border-bottom: 1px solid #000;
 }
 .form-group{
     margin-bottom: 1em;
@@ -77,9 +81,15 @@ body{
         appearance: none;
         border-radius: 0.375rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin: 0 0 10px 0;
+}
+input:focus{
+    outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 form label{
-        margin-bottom: .5rem;
+    display: inline-block;
+        margin-bottom: 0.5rem;
         font-weight: bold;
 }
 .checkbox{
@@ -104,10 +114,14 @@ form input[type="submit"]:hover{
     background-color: #025ec1;
 }   
 input:required:valid {
-    border-color: green;
+    border-color: #008000;
   }
-  input:invalid {
-    border-color: red;
+  input:not(:focus):invalid {
+    border-color: #FA0000;
+  }
+  .error-msg{
+    color: #FA0000;
+    padding: 5px;
   }
 .footer {
     position: relative;

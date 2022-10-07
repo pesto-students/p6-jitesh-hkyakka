@@ -61,11 +61,13 @@
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" id="email" class="input-text" name="email" placeholder="your@mail.com" required>
+                            <span class="error-msg">Email is mandatory.</span>
                         </div>
                         <div class="form-group">
                             <label for="mobile">Phone number</label>
                             <input type="text" id="mobile" class="input-text" name="mobile" placeholder="" type="tel" 
                             pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                            <span class="error-msg">Phone number is mandatory.</span>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
@@ -74,6 +76,7 @@
                         <div class="form-group">
                             <label for="cpassword">Confirm your password</label>
                             <input type="text" id="cpassword" class="input-text" name="cpassword" placeholder="*****" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                            <span class="error-msg">Password is not Matching.</span>
                         </div>
                         <div class="form-group">
                             <label for="country">Country</label>
