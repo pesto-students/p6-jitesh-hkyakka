@@ -1,0 +1,58 @@
+.container{
+    margin:20%;
+}
+.parent{
+    width: 200px;
+    height:200px;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    
+}
+.success-text{
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-1;
+}
+.topLeft{
+    background-color: red;
+    transition: transform 2s ease-in;
+    transform-origin: 0% 0%;
+}
+.bottomLeft{
+    background-color: blue;
+    transition: transform 2s ease-in;
+    transform-origin: 0% 100%;
+}
+.topright{
+    background-color: yellow;
+    transition: transform 2s ease-in;
+    transform-origin: 100% 0%;
+}
+.bottomright{
+    background-color: green;
+    transition: transform 2s ease-in;
+    transform-origin: 100% 100%;
+}
+.parent:hover .topLeft{
+    transform: rotate(90deg);
+    
+}
+.parent:hover .bottomLeft{
+    transform: rotate(-90deg);
+    
+}
+.parent:hover .topright{
+    transform: rotate(-90deg);
+  
+}
+.parent:hover .bottomright{
+    transform: rotate(90deg);
+   
+}
