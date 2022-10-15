@@ -18,8 +18,8 @@ animal.call(cat,"Cats",2,"faster","Dogs")
 animal.call(dog,"Dogs",2,"slower","Cats")
 
 //Apply
-animal.call(cat,["Cats",2,"faster","Dogs"])
-animal.call(dog,["Dogs",2,"slower","Cats"])
+animal.apply(cat,["Cats",2,"faster","Dogs"])
+animal.apply(dog,["Dogs",2,"slower","Cats"])
 
 //Bind
 
