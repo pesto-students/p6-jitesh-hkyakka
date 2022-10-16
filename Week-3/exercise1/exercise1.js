@@ -22,5 +22,7 @@ function time(fn){
 
 time(()=>memAdd(1,2,3,4,5))
 time(()=>memAdd(1,2,3,4,5,6))
+time(()=>memAdd(1,2,3,4,5,6))
+time(()=>memAdd(1,2,3,4,5,6))
 time(()=>memAdd(1,2,3,4,5,6,7))
 time(()=>memAdd(1,2,3,4,5,7,8))
