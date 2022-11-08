@@ -12,25 +12,36 @@ async function* playGames() {
     const t = await fetch(baseURLGames);
     yield t.status;
 }
-async function doTask1(){
-    const x = await hotCoffee();
-    console.log(x.status," Printing Hot Coffee"); 
+function doTask1(){
+    return hotCoffee(); 
 }
-async function doTask2() {
-    const x = await coldCoffee();
-    console.log(x.status," Printing Cold Coffee"); 
+function doTask2() {
+    return coldCoffee();
+}
+function doTask3() {
+   return playGames();
+}
+async function callTasks(){
+    
+    const t1 = await doTask1();
+    console.log(t1.status," Async Printing Hot Coffee");
+    
+    const t2 = await doTask2();
+    console.log(t2.status," Async Printing Cold Coffee");
+    
+    const t3 = await doTask3();
+    t3.next().then(c=>    console.log(c.value," Async Printing Play Games"));
 }
 
-async function doTask3() {
-    const x = playGames();
-    console.log(x.next().then((c) => {console.log("Status : ",c.value)})," Printing Play Games"); 
+callTasks();
+
+
+
+function* callGenTasks(){
+    yield doTask1();
+    yield doTask2();
+    yield doTask3();
 }
-const t1 = doTask1();
-console.log(t1," Nothing will print as Promise need to be resolved");
-
-const t2 = doTask2();
-console.log(t2," Nothing will print as Promise need to be resolved");
-
-const t3 = doTask3();
-console.log(t3," Nothing will print as Promise need to be resolved");
-
+callGenTasks().next().value.then(e=> console.log(e.status," Generator Printing Hot Coffee"));
+callGenTasks().next().value.then(e=> console.log(e.status," Generator Printing Cold Coffee"));
+callGenTasks().next().value.then(e=> console.log(e.status," Generator Printing Play Games"));
